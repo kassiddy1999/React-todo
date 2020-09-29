@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import axios from 'axios'
-import { Link } from 'react-router-dom'
+import React, { Component } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+// to use a lifecycle hook, the component should be class based
 class Home extends Component {
     state = {
         posts : [ ]
@@ -24,7 +25,7 @@ class Home extends Component {
                     <div className = "card-content">
                     <Link to = { '/' + post.id }>
                         <span classNamed = "card-title">{ post.title }</span>
-                     </Link>
+                    </Link>
                         <p> { post.body } </p>
                     </div>
                 </div>
